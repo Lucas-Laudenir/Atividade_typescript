@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title> <%= name %> - Stats</title>
+</head>
+<body>
+  <h1>Pokémon: <%= name %></h1>
+  <img src="<%= Image %>" alt="<%= name %> Image">
+  <h2>Stats:</h2>
+  <ul>
+    
+    <% for (let i = 0; i < stats.length; i++) { %>
+      <li><%= stats[i].stat.name %>: <%= stats[i].base_stat %></li>
+    <% } %>
+  </ul>
+  <a href="/">Back to list</a>
+</body>
+</html>
